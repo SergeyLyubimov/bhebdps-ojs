@@ -5,7 +5,7 @@ describe("About Numbers (about_numbers.js)", function() {
     // Являются ли целые числа и числа с плавающей точкой одним и тем же типом?
     expect(true).toBe(typeOfIntegers === typeOfFloats);
     // Какой тип у чисел в javascript?
-    expect("number").toBe(typeOfIntegers);
+    expect('number').toBe(typeOfIntegers);
     // Какое целое число равно 1.0?
     expect(1).toBe(1.0);
   });

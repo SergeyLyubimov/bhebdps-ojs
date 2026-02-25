@@ -32,15 +32,15 @@ describe("About Control Structures (about_control_structures.js)", function(){
     }
 
     // Какое значение получится в результате?
-    expect("nameage").toBe(result);
+    expect('nameage').toBe(result);
   });
 
   it("ternary operator", function() {
     let fruit = true ? "apple" : "orange";
-    expect("apple").toBe(fruit, 'what is the value of fruit?');
+    expect('apple').toBe(fruit, 'what is the value of fruit?');
 
     fruit = false ? "apple" : "orange";
-    expect("orange").toBe(fruit, 'now what is the value of fruit?');
+    expect('orange').toBe(fruit, 'now what is the value of fruit?');
   });
 
   it("switch", function() {
@@ -73,13 +73,13 @@ describe("About Control Structures (about_control_structures.js)", function(){
     }
 
     // Какое значение получится в результате?
-    expect("Merry").toBe(result);
+    expect('Merry').toBe(result);
   });
 
   it("null coalescing", function() {
     let result = null || "a value";
 
     // Какое значение получится в результате?
-    expect("a value").toBe(result);
+    expect('a value').toBe(result);
   });
 });

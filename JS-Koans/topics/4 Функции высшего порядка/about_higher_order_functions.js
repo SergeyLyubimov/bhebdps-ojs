@@ -35,7 +35,7 @@ describe("About Higher Order Functions (about_higher_order_functions.js)", funct
 
     numbers.forEach(isEven);
 
-    expect(msg).toEqual("falsetruefalse");
+    expect(msg).toEqual('falsetruefalse');
     expect(numbers).toEqual([1, 2, 3]);
   });
 

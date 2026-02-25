@@ -13,14 +13,14 @@ describe("About Scope (about_scope.js)", function() {
     (function() {
       let innerVariable = "inner";
       // определено ли outerVariable в этой области видимости?
-      expect("outer").toBe(outerVariable);
+      expect('outer').toBe(outerVariable);
       // определено ли innerVariable в этой области видимости?
-      expect("inner").toBe(innerVariable);
+      expect('inner').toBe(innerVariable);
     })();
 
     // определено ли outerVariable в этой области видимости?
-    expect("outer").toBe(outerVariable);
+    expect('outer').toBe(outerVariable);
     // определено ли innerVariable в этой области видимости?
-    expect("undefined").toBe(typeof(innerVariable));
+    expect('undefined').toBe(typeof(innerVariable));
   });
 });

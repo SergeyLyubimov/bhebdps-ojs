@@ -6,7 +6,7 @@ describe("About Arrays (about_arrays.js)", function() {
 
     let multiTypeArray = [0, 1, "two", function () { return 3; }, {value1: 4, value2: 5}, [6, 7]];
     expect(multiTypeArray[0]).toBe(0);
-    expect(multiTypeArray[2]).toBe("two");
+    expect(multiTypeArray[2]).toBe('two');
     expect(multiTypeArray[3]()).toBe(3);
     expect(multiTypeArray[4].value1).toBe(4);
     expect(multiTypeArray[4]["value2"]).toBe(5);
@@ -44,12 +44,12 @@ describe("About Arrays (about_arrays.js)", function() {
   it("slice", function () {
     let array = ["peanut", "butter", "and", "jelly"];
 
-    expect(array.slice(0, 1)).toEqual(["peanut"]);
-    expect(array.slice(0, 2)).toEqual(["peanut", "butter"]);
+    expect(array.slice(0, 1)).toEqual(['peanut']);
+    expect(array.slice(0, 2)).toEqual(['peanut', 'butter']);
     expect(array.slice(2, 2)).toEqual([]);
-    expect(array.slice(2, 20)).toEqual(["and", "jelly"]);
+    expect(array.slice(2, 20)).toEqual(['and', 'jelly']);
     expect(array.slice(3, 0)).toEqual([]);
-    expect(array.slice(3, 100)).toEqual(["jelly"]);
+    expect(array.slice(3, 100)).toEqual(['jelly']);
     expect(array.slice(5, 1)).toEqual([]);
     });
 
@@ -70,10 +70,10 @@ describe("About Arrays (about_arrays.js)", function() {
     stack.push("second");
 
     // Какое значение будет первым удалено со стека?
-    expect("second").toBe(stack.pop());
-    expect(stack).toEqual(["first"]);
+    expect('second').toBe(stack.pop());
+    expect(stack).toEqual(['first']);
     // Какое значение будет вторым удалено со стека?
-    expect("first").toBe(stack.pop());
+    expect('first').toBe(stack.pop());
     expect(stack).toEqual([]);
   });
 
@@ -84,11 +84,11 @@ describe("About Arrays (about_arrays.js)", function() {
     queue.unshift("third");
 
     // Какое значение будет удалено первым?
-    expect("third").toBe(queue.shift());
-    expect(queue).toEqual(["first", "second"]);
+    expect('third').toBe(queue.shift());
+    expect(queue).toEqual(['first', 'second']);
     // Какое значение будет удалено вторым?
-    expect("first").toBe(queue.shift());
-    expect(queue).toEqual(["second"]);
+    expect('first').toBe(queue.shift());
+    expect(queue).toEqual(['second']);
   });
 
   it("should know array references", function () {
@@ -98,14 +98,14 @@ describe("About Arrays (about_arrays.js)", function() {
       refArray[1] = "changed in function";
     }
     passedByReference(array);
-    expect(array[1]).toBe("changed in function");
+    expect(array[1]).toBe('changed in function');
   
     let assignedArray = array;
     assignedArray[5] = "changed in assignedArray";
-    expect(array[5]).toBe("changed in assignedArray");
+    expect(array[5]).toBe('changed in assignedArray');
 
     let copyOfArray = array.slice();
     copyOfArray[3] = "changed in copyOfArray";
-    expect(array[3]).toBe("three");
+    expect(array[3]).toBe('three');
   });
 });

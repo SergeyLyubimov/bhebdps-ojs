@@ -7,7 +7,7 @@ describe("About Functions And Closure (about_functions_and_closure.js)", functio
     };
     changeResult();
     // Какое значение будет у result после вызова функции changeResult?
-    expect("b").toBe(result);
+    expect('b').toBe(result);
   });
 
   it("assigning functions to variables", function() {
@@ -25,17 +25,17 @@ describe("About Functions And Closure (about_functions_and_closure.js)", functio
     (function(pv) {
       let secretValue = "password";
       // Какое значение будет в pv?
-      expect("shared").toBe(pv);
+      expect('shared').toBe(pv);
       // Доступна ли переменная available в этом контексте и какой у неё тип?
-      expect("string").toBe(typeof secretValue);
+      expect('string').toBe(typeof secretValue);
       // Доступна ли переменная publicValue в этом контексте и какой у неё тип?
-      expect("string").toBe(typeof publicValue);
+      expect('string').toBe(typeof publicValue);
     })(publicValue);
 
     // Доступна ли переменная available в этом контексте и какой у неё тип?
-    expect("undefined").toBe(typeof secretValue);
+    expect('undefined').toBe(typeof secretValue);
     // Доступна ли переменная publicValue в этом контексте и какой у неё тип?
-    expect("string").toBe(typeof publicValue);
+    expect('string').toBe(typeof publicValue);
   });
 
   it("arguments array", function() {
@@ -66,7 +66,7 @@ describe("About Functions And Closure (about_functions_and_closure.js)", functio
     let result = invokee.call("I am this!", "Where did it come from?");
 
     // Какой будет результат вызова функции invokee?
-    expect("I am this!Where did it come from?").toBe(result);
+    expect('I am this!Where did it come from?').toBe(result);
   });
 
   it("using apply to invoke function",function(){
@@ -80,6 +80,6 @@ describe("About Functions And Closure (about_functions_and_closure.js)", functio
     let result = invokee.apply("I am this!", ["I am arg1","I am arg2"]);
 
     // Какой будет результат вызова функции invokee?
-    expect("I am this!I am arg1I am arg2").toBe(result);
+    expect('I am this!I am arg1I am arg2').toBe(result);
   });
 });

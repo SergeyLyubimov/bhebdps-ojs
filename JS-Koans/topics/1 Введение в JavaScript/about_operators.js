@@ -53,12 +53,12 @@ describe("About Operators (about_operators.js)", function() {
   // typeof возвращает строку с названием типа
   it("typeof", function() {
     // Какой тип у пустого объекта?
-    expect("object").toBe(typeof {});
+    expect('object').toBe(typeof {});
     // Какой тип у строк?
-    expect("string").toBe(typeof 'apple');
+    expect('string').toBe(typeof 'apple');
     // Какой тип у -5?
-    expect("number").toBe(typeof -5);
+    expect('number').toBe(typeof -5);
     // Какой тип у false?
-    expect("boolean").toBe(typeof false);
+    expect('boolean').toBe(typeof false);
   });
 });

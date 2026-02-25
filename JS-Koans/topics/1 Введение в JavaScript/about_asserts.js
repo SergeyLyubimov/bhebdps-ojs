@@ -23,7 +23,7 @@ describe("About Asserts (about_asserts.js)", function() {
 
   // Иногда нужно быть точным в том, что вы "печатаете".
   it('should assert equality with ===', function() {
-    let expectedValue = "2";
+    let expectedValue = '2';
     let actualValue = (1 + 1).toString();
 
   // toBe() всегда использует строе равенство (===).

@@ -11,19 +11,19 @@ describe("About Strings (about_strings.js)", function() {
     let fruit = "apple";
     let dish = "pie";
     // Эти две строки равны?
-    expect("apple pie").toBe(fruit + " " + dish);
+    expect('apple pie').toBe(fruit + " " + dish);
   });
 
   it("character Type", function() {
     let characterType = typeof("Amory".charAt(1));
     // В JavaScript нет типа "символ"
-    expect("string").toBe(characterType);
+    expect('string').toBe(characterType);
   });
 
   it("escape character", function() {
     let stringWithAnEscapedCharacter  = "\u0041pple";
     // Какое значение в переменной stringWithAnEscapedCharacter?
-    expect("Apple").toBe(stringWithAnEscapedCharacter);
+    expect('Apple').toBe(stringWithAnEscapedCharacter);
   });
 
   it("string.length", function() {
@@ -35,6 +35,6 @@ describe("About Strings (about_strings.js)", function() {
   it("slice", function() {
     let fruit = "apple pie";
     // Какое значение в fruit.slice(0,5)?
-    expect("apple").toBe(fruit.slice(0,5));
+    expect('apple').toBe(fruit.slice(0,5));
   }); 
 });

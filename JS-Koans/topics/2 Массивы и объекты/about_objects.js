@@ -8,7 +8,7 @@ describe("About Objects (about_objects.js)", function() {
 
   it("object literal notation", function() {
     let person = {
-      name: "Amory Blaine",
+      name: 'Amory Blaine',
       age: 102
     };
     // Какое имя у объекта person?
