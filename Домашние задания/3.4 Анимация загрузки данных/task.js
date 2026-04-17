@@ -2,7 +2,7 @@ async function getData() {
   const response = await fetch('https://students.netoservices.ru/nestjs-backend/slow-get-courses');
   const body = await response.json();
 
-  document.getElementById('items').innerHTML = Object.values(body.response.Valute).map(item => 
+  document.getElementById('items').innerHTML = Object.values(body.response.Valute).map(item =>
     `<div class="item">
       <div class="item__code">
       ${item.CharCode}
